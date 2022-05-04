@@ -1,9 +1,9 @@
 import React from 'react';
 
-interface HelloWordProps {
+interface Props {
   name: string;
 }
 
-export const HelloWord: React.FC<HelloWordProps> = ({ name }) => {
+export const HelloWord = ({ name }: Props) => {
   return <h1>Hello Word {name}</h1>;
 };
